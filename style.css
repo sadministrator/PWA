@@ -6,6 +6,9 @@
         #97CAEF
         #CAFAFE
 */
+#installBtn.hidden {
+    display: none;
+}
 
 body {
     display: grid;

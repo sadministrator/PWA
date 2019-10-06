@@ -10,6 +10,21 @@
     display: none;
 }
 
+#installBtn {
+    position: relative;
+    width: 220px;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 150%;
+    background-color: #FC4445;
+    border-radius: 5%;
+    display: block;
+    margin: 30px;
+}
+
 body {
     display: grid;
     grid-template-columns: 6% 88% 6%;

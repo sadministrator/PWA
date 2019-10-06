@@ -4,10 +4,7 @@
 const CACHE_NAME = 'static-cache-v1';
 
 const FILES_TO_CACHE = [
-    'index.html',
-    'style.css',
-    'scripts/engine.js',
-    'scripts/interface.js'
+    'index.html'
 ];
 
 self.addEventListener('install', (evt) => {

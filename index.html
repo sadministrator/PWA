@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marco Serrano's Game of Life</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <div id="banner">
+            <h1>MarConway's Game of Life</h1>
+        </div>
+
+        <div id="main">
+            <div id="top-controller" class="controller">
+              <button id="api" type="button">API</button>
+
+              <div>
+                <label for="width">Rows:</label>
+                <input id="width" type="number" min="3" max="100">
+              </div>
+
+              <div>
+                <label for="height">Columns:</label>
+                <input id="height" type="number" min="3" max="100">
+              </div>
+
+              <button id="create" type="button">Create</button>
+            </div>
+
+            <div id="screen">
+              <table id="table">
+
+              </table>
+            </div>
+
+            <div id="bottom-controller" class="controller">
+              <div>
+                <label for="delay">Delay:</label>
+                <input id="delay" type="number" min="100">
+              </div>
+
+              <div>
+                <button id="play" type="button">Play</button>
+
+                <button id="pause" type="button">Pause</button>
+
+                <button id="next" type="button">Next</button>
+              </div>
+
+              <button id="clear" type="button">Clear</button>
+            </div>
+        </div>
+
+        <div id="footer">
+          <small>&copy;Marco Serrano Industries Corp.
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="scripts/engine.js"></script>
+        <script src="scripts/interface.js"></script>
+    </body>
+</html>

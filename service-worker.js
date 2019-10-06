@@ -35,7 +35,17 @@ self.addEventListener('activate', (evt) => {
 });
 
 self.addEventListener('fetch', (evt) => {
-  console.log('[ServiceWorker] Fetch', evt.request.url);
-  // CODELAB: Add fetch event handler here.
-
+    console.log('[ServiceWorker] Fetch', evt.request.url);
+    if (evt.request.mode !== 'navigate') {
+        return;
+    }
+    evt.respondWith(
+        fetch(evt.request)
+        .catch(() => {
+            return caches.open(CACHE_NAME)
+                .then((cache) => {
+                  return cache.match('offline.html');
+                });
+        })
+    );
 });
